@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0C72E21717315500589C92 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C72E11717315500589C92 /* MainViewController.m */; };
+		9F0C72E41717359000589C92 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72E31717359000589C92 /* Brandon_reg.otf */; };
+		9F0C72EB171739F100589C92 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72E6171739F100589C92 /* background.jpg */; };
+		9F0C72EC171739F100589C92 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72E7171739F100589C92 /* background@2x.jpg */; };
+		9F0C72ED171739F100589C92 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72E8171739F100589C92 /* crown.png */; };
+		9F0C72EE171739F100589C92 /* crown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C72E9171739F100589C92 /* crown@2x.png */; };
+		9F0C72F41717514600589C92 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C72F31717514600589C92 /* WebViewController.m */; };
 		9F81866517172C2500ED423C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866417172C2500ED423C /* UIKit.framework */; };
 		9F81866717172C2500ED423C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866617172C2500ED423C /* Foundation.framework */; };
 		9F81866917172C2500ED423C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866817172C2500ED423C /* CoreGraphics.framework */; };
@@ -21,6 +28,8 @@
 		9F81868517172C2500ED423C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866617172C2500ED423C /* Foundation.framework */; };
 		9F81868D17172C2500ED423C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F81868B17172C2500ED423C /* InfoPlist.strings */; };
 		9F81869017172C2500ED423C /* QCMerge2013Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81868F17172C2500ED423C /* QCMerge2013Tests.m */; };
+		9F81869A17172C5900ED423C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81869917172C5900ED423C /* Storyboard.storyboard */; };
+		9F8186A71717302900ED423C /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8186A61717302900ED423C /* Brandon_bld.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F0C72E01717315500589C92 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9F0C72E11717315500589C92 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9F0C72E31717359000589C92 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
+		9F0C72E6171739F100589C92 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		9F0C72E7171739F100589C92 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		9F0C72E8171739F100589C92 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		9F0C72E9171739F100589C92 /* crown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crown@2x.png"; sourceTree = "<group>"; };
+		9F0C72F21717514600589C92 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		9F0C72F31717514600589C92 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		9F81866117172C2500ED423C /* QCMerge2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCMerge2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F81866417172C2500ED423C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F81866617172C2500ED423C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +71,13 @@
 		9F81868C17172C2500ED423C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F81868E17172C2500ED423C /* QCMerge2013Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCMerge2013Tests.h; sourceTree = "<group>"; };
 		9F81868F17172C2500ED423C /* QCMerge2013Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCMerge2013Tests.m; sourceTree = "<group>"; };
+		9F81869917172C5900ED423C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9F81869B17172CFF00ED423C /* ample-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ample-1.png"; sourceTree = "<group>"; };
+		9F81869C17172CFF00ED423C /* bg-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-header.png"; sourceTree = "<group>"; };
+		9F81869D17172CFF00ED423C /* bg-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-page.png"; sourceTree = "<group>"; };
+		9F81869E17172CFF00ED423C /* hatterheadshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatterheadshot.png; sourceTree = "<group>"; };
+		9F81869F17172CFF00ED423C /* jenmyers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jenmyers.jpeg; sourceTree = "<group>"; };
+		9F8186A61717302900ED423C /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +137,15 @@
 		9F81866A17172C2500ED423C /* QCMerge2013 */ = {
 			isa = PBXGroup;
 			children = (
+				9F8186A517172D0500ED423C /* Assets */,
 				9F81867317172C2500ED423C /* AppDelegate.h */,
 				9F81867417172C2500ED423C /* AppDelegate.m */,
 				9F81866B17172C2500ED423C /* Supporting Files */,
+				9F81869917172C5900ED423C /* Storyboard.storyboard */,
+				9F0C72E01717315500589C92 /* MainViewController.h */,
+				9F0C72E11717315500589C92 /* MainViewController.m */,
+				9F0C72F21717514600589C92 /* WebViewController.h */,
+				9F0C72F31717514600589C92 /* WebViewController.m */,
 			);
 			path = QCMerge2013;
 			sourceTree = "<group>";
@@ -150,6 +181,24 @@
 				9F81868B17172C2500ED423C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F8186A517172D0500ED423C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C72E6171739F100589C92 /* background.jpg */,
+				9F0C72E7171739F100589C92 /* background@2x.jpg */,
+				9F0C72E8171739F100589C92 /* crown.png */,
+				9F0C72E9171739F100589C92 /* crown@2x.png */,
+				9F8186A61717302900ED423C /* Brandon_bld.otf */,
+				9F0C72E31717359000589C92 /* Brandon_reg.otf */,
+				9F81869B17172CFF00ED423C /* ample-1.png */,
+				9F81869C17172CFF00ED423C /* bg-header.png */,
+				9F81869D17172CFF00ED423C /* bg-page.png */,
+				9F81869E17172CFF00ED423C /* hatterheadshot.png */,
+				9F81869F17172CFF00ED423C /* jenmyers.jpeg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +276,12 @@
 				9F81867717172C2500ED423C /* Default.png in Resources */,
 				9F81867917172C2500ED423C /* Default@2x.png in Resources */,
 				9F81867B17172C2500ED423C /* Default-568h@2x.png in Resources */,
+				9F81869A17172C5900ED423C /* Storyboard.storyboard in Resources */,
+				9F8186A71717302900ED423C /* Brandon_bld.otf in Resources */,
+				9F0C72EB171739F100589C92 /* background.jpg in Resources */,
+				9F0C72EC171739F100589C92 /* background@2x.jpg in Resources */,
+				9F0C72ED171739F100589C92 /* crown.png in Resources */,
+				9F0C72EE171739F100589C92 /* crown@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F81868D17172C2500ED423C /* InfoPlist.strings in Resources */,
+				9F0C72E41717359000589C92 /* Brandon_reg.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +319,8 @@
 			files = (
 				9F81867117172C2500ED423C /* main.m in Sources */,
 				9F81867517172C2500ED423C /* AppDelegate.m in Sources */,
+				9F0C72E21717315500589C92 /* MainViewController.m in Sources */,
+				9F0C72F41717514600589C92 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +493,7 @@
 				9F81869517172C2500ED423C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F81869617172C2500ED423C /* Build configuration list for PBXNativeTarget "QCMerge2013Tests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +502,7 @@
 				9F81869817172C2500ED423C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

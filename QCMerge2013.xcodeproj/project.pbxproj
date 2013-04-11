@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F81866517172C2500ED423C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866417172C2500ED423C /* UIKit.framework */; };
+		9F81866717172C2500ED423C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866617172C2500ED423C /* Foundation.framework */; };
+		9F81866917172C2500ED423C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866817172C2500ED423C /* CoreGraphics.framework */; };
+		9F81866F17172C2500ED423C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F81866D17172C2500ED423C /* InfoPlist.strings */; };
+		9F81867117172C2500ED423C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81867017172C2500ED423C /* main.m */; };
+		9F81867517172C2500ED423C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81867417172C2500ED423C /* AppDelegate.m */; };
+		9F81867717172C2500ED423C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F81867617172C2500ED423C /* Default.png */; };
+		9F81867917172C2500ED423C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F81867817172C2500ED423C /* Default@2x.png */; };
+		9F81867B17172C2500ED423C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F81867A17172C2500ED423C /* Default-568h@2x.png */; };
+		9F81868317172C2500ED423C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81868217172C2500ED423C /* SenTestingKit.framework */; };
+		9F81868417172C2500ED423C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866417172C2500ED423C /* UIKit.framework */; };
+		9F81868517172C2500ED423C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F81866617172C2500ED423C /* Foundation.framework */; };
+		9F81868D17172C2500ED423C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F81868B17172C2500ED423C /* InfoPlist.strings */; };
+		9F81869017172C2500ED423C /* QCMerge2013Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81868F17172C2500ED423C /* QCMerge2013Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F81868617172C2500ED423C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F81865917172C2500ED423C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F81866017172C2500ED423C;
+			remoteInfo = QCMerge2013;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F81866117172C2500ED423C /* QCMerge2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCMerge2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F81866417172C2500ED423C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F81866617172C2500ED423C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F81866817172C2500ED423C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F81866C17172C2500ED423C /* QCMerge2013-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QCMerge2013-Info.plist"; sourceTree = "<group>"; };
+		9F81866E17172C2500ED423C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F81867017172C2500ED423C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F81867217172C2500ED423C /* QCMerge2013-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QCMerge2013-Prefix.pch"; sourceTree = "<group>"; };
+		9F81867317172C2500ED423C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F81867417172C2500ED423C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F81867617172C2500ED423C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9F81867817172C2500ED423C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9F81867A17172C2500ED423C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9F81868117172C2500ED423C /* QCMerge2013Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCMerge2013Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F81868217172C2500ED423C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9F81868A17172C2500ED423C /* QCMerge2013Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QCMerge2013Tests-Info.plist"; sourceTree = "<group>"; };
+		9F81868C17172C2500ED423C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F81868E17172C2500ED423C /* QCMerge2013Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCMerge2013Tests.h; sourceTree = "<group>"; };
+		9F81868F17172C2500ED423C /* QCMerge2013Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCMerge2013Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F81865E17172C2500ED423C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81866517172C2500ED423C /* UIKit.framework in Frameworks */,
+				9F81866717172C2500ED423C /* Foundation.framework in Frameworks */,
+				9F81866917172C2500ED423C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81867D17172C2500ED423C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81868317172C2500ED423C /* SenTestingKit.framework in Frameworks */,
+				9F81868417172C2500ED423C /* UIKit.framework in Frameworks */,
+				9F81868517172C2500ED423C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F81865817172C2500ED423C = {
+			isa = PBXGroup;
+			children = (
+				9F81866A17172C2500ED423C /* QCMerge2013 */,
+				9F81868817172C2500ED423C /* QCMerge2013Tests */,
+				9F81866317172C2500ED423C /* Frameworks */,
+				9F81866217172C2500ED423C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F81866217172C2500ED423C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F81866117172C2500ED423C /* QCMerge2013.app */,
+				9F81868117172C2500ED423C /* QCMerge2013Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F81866317172C2500ED423C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F81866417172C2500ED423C /* UIKit.framework */,
+				9F81866617172C2500ED423C /* Foundation.framework */,
+				9F81866817172C2500ED423C /* CoreGraphics.framework */,
+				9F81868217172C2500ED423C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F81866A17172C2500ED423C /* QCMerge2013 */ = {
+			isa = PBXGroup;
+			children = (
+				9F81867317172C2500ED423C /* AppDelegate.h */,
+				9F81867417172C2500ED423C /* AppDelegate.m */,
+				9F81866B17172C2500ED423C /* Supporting Files */,
+			);
+			path = QCMerge2013;
+			sourceTree = "<group>";
+		};
+		9F81866B17172C2500ED423C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F81866C17172C2500ED423C /* QCMerge2013-Info.plist */,
+				9F81866D17172C2500ED423C /* InfoPlist.strings */,
+				9F81867017172C2500ED423C /* main.m */,
+				9F81867217172C2500ED423C /* QCMerge2013-Prefix.pch */,
+				9F81867617172C2500ED423C /* Default.png */,
+				9F81867817172C2500ED423C /* Default@2x.png */,
+				9F81867A17172C2500ED423C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F81868817172C2500ED423C /* QCMerge2013Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9F81868E17172C2500ED423C /* QCMerge2013Tests.h */,
+				9F81868F17172C2500ED423C /* QCMerge2013Tests.m */,
+				9F81868917172C2500ED423C /* Supporting Files */,
+			);
+			path = QCMerge2013Tests;
+			sourceTree = "<group>";
+		};
+		9F81868917172C2500ED423C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F81868A17172C2500ED423C /* QCMerge2013Tests-Info.plist */,
+				9F81868B17172C2500ED423C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F81866017172C2500ED423C /* QCMerge2013 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F81869317172C2500ED423C /* Build configuration list for PBXNativeTarget "QCMerge2013" */;
+			buildPhases = (
+				9F81865D17172C2500ED423C /* Sources */,
+				9F81865E17172C2500ED423C /* Frameworks */,
+				9F81865F17172C2500ED423C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCMerge2013;
+			productName = QCMerge2013;
+			productReference = 9F81866117172C2500ED423C /* QCMerge2013.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F81868017172C2500ED423C /* QCMerge2013Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F81869617172C2500ED423C /* Build configuration list for PBXNativeTarget "QCMerge2013Tests" */;
+			buildPhases = (
+				9F81867C17172C2500ED423C /* Sources */,
+				9F81867D17172C2500ED423C /* Frameworks */,
+				9F81867E17172C2500ED423C /* Resources */,
+				9F81867F17172C2500ED423C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F81868717172C2500ED423C /* PBXTargetDependency */,
+			);
+			name = QCMerge2013Tests;
+			productName = QCMerge2013Tests;
+			productReference = 9F81868117172C2500ED423C /* QCMerge2013Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F81865917172C2500ED423C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Gaslight;
+			};
+			buildConfigurationList = 9F81865C17172C2500ED423C /* Build configuration list for PBXProject "QCMerge2013" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F81865817172C2500ED423C;
+			productRefGroup = 9F81866217172C2500ED423C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F81866017172C2500ED423C /* QCMerge2013 */,
+				9F81868017172C2500ED423C /* QCMerge2013Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F81865F17172C2500ED423C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81866F17172C2500ED423C /* InfoPlist.strings in Resources */,
+				9F81867717172C2500ED423C /* Default.png in Resources */,
+				9F81867917172C2500ED423C /* Default@2x.png in Resources */,
+				9F81867B17172C2500ED423C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81867E17172C2500ED423C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81868D17172C2500ED423C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F81867F17172C2500ED423C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F81865D17172C2500ED423C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81867117172C2500ED423C /* main.m in Sources */,
+				9F81867517172C2500ED423C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81867C17172C2500ED423C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F81869017172C2500ED423C /* QCMerge2013Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F81868717172C2500ED423C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F81866017172C2500ED423C /* QCMerge2013 */;
+			targetProxy = 9F81868617172C2500ED423C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F81866D17172C2500ED423C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F81866E17172C2500ED423C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F81868B17172C2500ED423C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F81868C17172C2500ED423C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F81869117172C2500ED423C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F81869217172C2500ED423C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F81869417172C2500ED423C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCMerge2013/QCMerge2013-Prefix.pch";
+				INFOPLIST_FILE = "QCMerge2013/QCMerge2013-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F81869517172C2500ED423C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCMerge2013/QCMerge2013-Prefix.pch";
+				INFOPLIST_FILE = "QCMerge2013/QCMerge2013-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9F81869717172C2500ED423C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QCMerge2013.app/QCMerge2013";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCMerge2013/QCMerge2013-Prefix.pch";
+				INFOPLIST_FILE = "QCMerge2013Tests/QCMerge2013Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9F81869817172C2500ED423C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QCMerge2013.app/QCMerge2013";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCMerge2013/QCMerge2013-Prefix.pch";
+				INFOPLIST_FILE = "QCMerge2013Tests/QCMerge2013Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F81865C17172C2500ED423C /* Build configuration list for PBXProject "QCMerge2013" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F81869117172C2500ED423C /* Debug */,
+				9F81869217172C2500ED423C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F81869317172C2500ED423C /* Build configuration list for PBXNativeTarget "QCMerge2013" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F81869417172C2500ED423C /* Debug */,
+				9F81869517172C2500ED423C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F81869617172C2500ED423C /* Build configuration list for PBXNativeTarget "QCMerge2013Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F81869717172C2500ED423C /* Debug */,
+				9F81869817172C2500ED423C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F81865917172C2500ED423C /* Project object */;
+}

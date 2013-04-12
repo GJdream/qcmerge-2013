@@ -30,6 +30,7 @@
 		9F81869017172C2500ED423C /* QCMerge2013Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81868F17172C2500ED423C /* QCMerge2013Tests.m */; };
 		9F81869A17172C5900ED423C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F81869917172C5900ED423C /* Storyboard.storyboard */; };
 		9F8186A71717302900ED423C /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8186A61717302900ED423C /* Brandon_bld.otf */; };
+		9F9346B21718A9E4003AF9CC /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		9F81869E17172CFF00ED423C /* hatterheadshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatterheadshot.png; sourceTree = "<group>"; };
 		9F81869F17172CFF00ED423C /* jenmyers.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jenmyers.jpeg; sourceTree = "<group>"; };
 		9F8186A61717302900ED423C /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		9F9346B01718A9E4003AF9CC /* TweetsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsTableViewController.h; sourceTree = "<group>"; };
+		9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				9F0C72E11717315500589C92 /* MainViewController.m */,
 				9F0C72F21717514600589C92 /* WebViewController.h */,
 				9F0C72F31717514600589C92 /* WebViewController.m */,
+				9F9346B01718A9E4003AF9CC /* TweetsTableViewController.h */,
+				9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */,
 			);
 			path = QCMerge2013;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				9F81867517172C2500ED423C /* AppDelegate.m in Sources */,
 				9F0C72E21717315500589C92 /* MainViewController.m in Sources */,
 				9F0C72F41717514600589C92 /* WebViewController.m in Sources */,
+				9F9346B21718A9E4003AF9CC /* TweetsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

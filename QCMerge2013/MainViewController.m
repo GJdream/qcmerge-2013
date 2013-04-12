@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "WebViewController.h"
 
 @interface MainViewController ()
 
@@ -36,7 +35,7 @@
             label.font = [UIFont fontWithName:@"BrandonGrotesque-Bold" size:45];
             label.userInteractionEnabled = YES;
 
-            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showWebView:)];
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleLabelTap:)];
             [label addGestureRecognizer:tap];
         }
     }
@@ -70,10 +69,16 @@
     }];
 }
 
-- (void)showWebView:(UIGestureRecognizer *)gestureRecognizer
+- (void)handleLabelTap:(UIGestureRecognizer *)gestureRecognizer
 {
     UILabel *label = (UILabel *)gestureRecognizer.view;
-    [self performSegueWithIdentifier:@"showWebView" sender:label];
+
+    if ([label.text isEqualToString:@" TWEET"])
+    {
+        [self performSegueWithIdentifier:@"showTweets" sender:label];
+    } else {
+        [self performSegueWithIdentifier:@"showWebView" sender:label];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

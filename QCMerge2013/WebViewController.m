@@ -9,7 +9,7 @@
 #import "WebViewController.h"
 
 @interface WebViewController ()
-
+@property BOOL webViewLoaded;
 @end
 
 @implementation WebViewController
@@ -26,7 +26,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://qcmerge.com"]]];
+    if (!self.webViewLoaded)
+    {
+        NSString *url = @"http://qcmerge.com#";
+        NSString *area = self.title;
+        [[url stringByAppendingString:area] lowercaseString];
+
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+        self.webViewLoaded = YES;
+        NSLog(@"loaded");
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

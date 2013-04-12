@@ -1,1 +1,5 @@
 xcuserdata/
+
+.bundle/
+bin/
+vendor/ruby

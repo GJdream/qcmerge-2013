@@ -28,7 +28,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
 
-    for (UIView *view in self.view.subviews)
+    for (UIView *view in self.mainView.subviews)
     {
         if([view isKindOfClass:[UILabel class]])
         {
@@ -41,7 +41,7 @@
         }
     }
 
-    [self animateLogo];
+    [self animateView];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -56,12 +56,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)animateLogo
+- (void)animateView
 {
+    CGRect initialFrame = self.view.frame;
+    int logoHeight = 35;
+    int height = initialFrame.size.height - logoHeight;
+
+    self.mainView.frame = CGRectMake(0, height * -1,
+                                     initialFrame.size.width,
+                                     initialFrame.size.height);
     [UIView animateWithDuration:0.5 animations:^{
-        CGRect mainRect = self.view.frame;
-        CGPoint center = CGPointMake(CGRectGetMidX(mainRect), CGRectGetMidY(mainRect));
-        self.logoImage.center = center;
+        self.mainView.frame = CGRectMake(0, 0, initialFrame.size.width, initialFrame.size.height);
     }];
 }
 

@@ -32,6 +32,8 @@
 		9F8186A71717302900ED423C /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8186A61717302900ED423C /* Brandon_bld.otf */; };
 		9F9346B21718A9E4003AF9CC /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */; };
 		9FCAC9821718E70700001492 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAC9811718E70700001492 /* Tweet.m */; };
+		9FCAC985171A190100001492 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCAC984171A190100001492 /* SystemConfiguration.framework */; };
+		9FCAC987171A196300001492 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCAC986171A196300001492 /* MobileCoreServices.framework */; };
 		AAF4733F9D464B0184C292CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EE690DE0024A55A3CB03D7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetsTableViewController.m; path = Controllers/TweetsTableViewController.m; sourceTree = "<group>"; };
 		9FCAC9801718E70700001492 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tweet.h; path = Models/Tweet.h; sourceTree = "<group>"; };
 		9FCAC9811718E70700001492 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweet.m; path = Models/Tweet.m; sourceTree = "<group>"; };
+		9FCAC984171A190100001492 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9FCAC986171A196300001492 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			files = (
 				9F81866517172C2500ED423C /* UIKit.framework in Frameworks */,
 				9F81866717172C2500ED423C /* Foundation.framework in Frameworks */,
+				9FCAC985171A190100001492 /* SystemConfiguration.framework in Frameworks */,
+				9FCAC987171A196300001492 /* MobileCoreServices.framework in Frameworks */,
 				9F81866917172C2500ED423C /* CoreGraphics.framework in Frameworks */,
 				AAF4733F9D464B0184C292CC /* libPods.a in Frameworks */,
 			);
@@ -132,10 +138,12 @@
 		9F81866317172C2500ED423C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FCAC986171A196300001492 /* MobileCoreServices.framework */,
 				9F81866417172C2500ED423C /* UIKit.framework */,
 				9F81866617172C2500ED423C /* Foundation.framework */,
 				9F81866817172C2500ED423C /* CoreGraphics.framework */,
 				9F81868217172C2500ED423C /* SenTestingKit.framework */,
+				9FCAC984171A190100001492 /* SystemConfiguration.framework */,
 				84EE690DE0024A55A3CB03D7 /* libPods.a */,
 			);
 			name = Frameworks;

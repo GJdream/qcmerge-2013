@@ -83,10 +83,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showWebView"])
-    {
-        NSString *title = [sender text];
-        [segue.destinationViewController setTitle:[title capitalizedString]];
-    }
+    NSString *title = [sender text];
+    [segue.destinationViewController setTitle:[title capitalizedString]];
 }
 @end

@@ -149,18 +149,13 @@
 		9F81866A17172C2500ED423C /* QCMerge2013 */ = {
 			isa = PBXGroup;
 			children = (
+				9FCAC9831718F29600001492 /* Controllers */,
 				9FCAC97F1718E6F100001492 /* Models */,
 				9F8186A517172D0500ED423C /* Assets */,
 				9F81867317172C2500ED423C /* AppDelegate.h */,
 				9F81867417172C2500ED423C /* AppDelegate.m */,
 				9F81866B17172C2500ED423C /* Supporting Files */,
 				9F81869917172C5900ED423C /* Storyboard.storyboard */,
-				9F0C72E01717315500589C92 /* MainViewController.h */,
-				9F0C72E11717315500589C92 /* MainViewController.m */,
-				9F0C72F21717514600589C92 /* WebViewController.h */,
-				9F0C72F31717514600589C92 /* WebViewController.m */,
-				9F9346B01718A9E4003AF9CC /* TweetsTableViewController.h */,
-				9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */,
 			);
 			path = QCMerge2013;
 			sourceTree = "<group>";
@@ -223,6 +218,19 @@
 				9FCAC9811718E70700001492 /* Tweet.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9FCAC9831718F29600001492 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C72E01717315500589C92 /* MainViewController.h */,
+				9F0C72E11717315500589C92 /* MainViewController.m */,
+				9F0C72F21717514600589C92 /* WebViewController.h */,
+				9F0C72F31717514600589C92 /* WebViewController.m */,
+				9F9346B01718A9E4003AF9CC /* TweetsTableViewController.h */,
+				9F9346B11718A9E4003AF9CC /* TweetsTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

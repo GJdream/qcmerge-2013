@@ -1,0 +1,35 @@
+#!/bin/sh
+
+set -e
+
+echo ""
+echo " Setting up QCMerge 2013..."
+echo ""
+
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Install gems
+#
+echo "  + Bootstrapping your Rubies."
+bundle install --binstubs --local --deployment --path vendor --quiet
+
+#
+# Install CocoaPods
+#
+echo "  + Podding the cocoas."
+pod install
+
+echo "  + Ok, setup complete. Run"
+echo "    open QCMerge2013.xcworkspace"

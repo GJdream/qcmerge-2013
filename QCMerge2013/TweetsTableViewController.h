@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
 
 @interface TweetsTableViewController : UITableViewController
-
+@property (strong, nonatomic) NSMutableArray *tweets;
 @end

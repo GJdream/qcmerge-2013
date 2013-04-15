@@ -58,36 +58,40 @@
 
 -(void) populateTweetsWithSearch:(NSString *)searchString
 {
-    [self.tweets removeAllObjects];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [self.tweets removeAllObjects];
 
-    NSString *url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=%@", searchString];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        NSString *url = [NSString stringWithFormat:@"http://search.twitter.com/search.json?q=%@", searchString];
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
 
-    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id json) {
-        id results = [json valueForKey:@"results"];
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id json) {
+            id results = [json valueForKey:@"results"];
 
-        [results enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            Tweet *tweet = [[Tweet alloc] init];
-            tweet.text = [obj valueForKey:@"text"];
-            tweet.profileImageUrl = [obj valueForKey:@"profile_image_url"];
+            [results enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                Tweet *tweet = [[Tweet alloc] init];
+                tweet.text = [obj valueForKey:@"text"];
+                tweet.profileImageUrl = [obj valueForKey:@"profile_image_url"];
 
-            [self.tweets addObject:tweet];
+                [self.tweets addObject:tweet];
+            }];
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+                [self.tableView setNeedsDisplay];
+            });
+        }
+        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Error retrieving Tweets"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"Ok", nil];
+            [alert show];
         }];
 
-        [self.tableView reloadData];
-        [self.tableView setNeedsDisplay];
-    }
-    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message:@"Error retrieving Tweets"
-                                                       delegate:self
-                                              cancelButtonTitle:@"Cancel"
-                                              otherButtonTitles:@"Ok", nil];
-        [alert show];
-    }];
-
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [queue addOperation:operation];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [queue addOperation:operation];
+    });
 }
 
 #pragma mark - Table view data source

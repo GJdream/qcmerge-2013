@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MainViewController ()
 
@@ -67,6 +68,17 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.mainView.frame = CGRectMake(0, 0, initialFrame.size.width, initialFrame.size.height);
     }];
+
+    CABasicAnimation *bounceAnimation = [CABasicAnimation animationWithKeyPath:@"position.y"];
+    bounceAnimation.duration = 0.2;
+    bounceAnimation.fromValue = [NSNumber numberWithInt:0];
+    bounceAnimation.toValue = [NSNumber numberWithInt:-20];
+    bounceAnimation.repeatCount = 2;
+    bounceAnimation.autoreverses = YES;
+    bounceAnimation.fillMode = kCAFillModeForwards;
+    bounceAnimation.removedOnCompletion = NO;
+    bounceAnimation.additive = YES;
+    [self.mainView.layer addAnimation:bounceAnimation forKey:@"bounceAnimation"];
 }
 
 - (void)handleLabelTap:(UIGestureRecognizer *)gestureRecognizer

@@ -62,9 +62,8 @@
     int logoHeight = 35;
     int height = initialFrame.size.height - logoHeight;
 
-    self.mainView.frame = CGRectMake(0, height * -1,
-                                     initialFrame.size.width,
-                                     initialFrame.size.height);
+    self.mainView.frame = CGRectMake(0, height * -1, initialFrame.size.width, initialFrame.size.height);
+
     [UIView animateWithDuration:0.5 animations:^{
         self.mainView.frame = CGRectMake(0, 0, initialFrame.size.width, initialFrame.size.height);
     }];
